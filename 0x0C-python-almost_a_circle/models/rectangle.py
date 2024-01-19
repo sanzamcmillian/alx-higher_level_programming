@@ -34,7 +34,6 @@ class Rectangle(Base):
     @property
     def width(self):
         """
-
         Getter method for the width property.
 
         Returns:
@@ -60,7 +59,6 @@ class Rectangle(Base):
     @property
     def height(self):
         """
-
         Getter method for height property.
 
         Returns: 
@@ -71,7 +69,6 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """
-
         Setter method for the height property
 
         Raises:
@@ -87,7 +84,6 @@ class Rectangle(Base):
     @property
     def x(self):
         """
-
         Getter method for the x property.
 
         Returns:
@@ -113,7 +109,6 @@ class Rectangle(Base):
     @property
     def y(self):
         """
-
         Getter method for the y property.
 
         Returns:
@@ -124,7 +119,6 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """
-
         Setter method for the y property.
 
         Raises:

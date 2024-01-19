@@ -52,7 +52,7 @@ class Square(Rectangle):
         Returns:
             str: A string representation of the square.
         """
-        return("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size))
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
         """
@@ -95,4 +95,4 @@ class Square(Rectangle):
         Returns:
             dict: A dictionary representation of the square.
         """
-        return({"id": self.id, "size": self.width, "x": self.x, "y": self.y})
+        return {"id": self.id, "size": self.width, "x": self.x, "y": self.y}
