@@ -9,8 +9,8 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = db.cursor()
     cur.execute("""SELECT cities.id, cities.name, states.name FROM
-                cities INNER JOIN states ON states.id=cities.id""")
-    rows = cur.fetchball()
+                cities INNER JOIN states ON states.id=cities_id""")
+    rows = cur.fetchall()
     for row in rows:
         print(row)
     cur.close()
