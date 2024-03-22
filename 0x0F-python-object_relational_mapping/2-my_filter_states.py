@@ -9,8 +9,8 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = db.cursor()
     state_name = sys.argv[4]
-    cur.execute("SELECT * FROM states WHERE name = '%s' ORDER BY id ASC"
-                .format(state_name))
+    cur.execute("SELECT * FROM states WHERE name = %s ORDER BY id ASC",
+                (state_name,))
     rows = cur.fetchall()
     for row in rows:
         print(rows)
