@@ -11,8 +11,8 @@ if __name__ == "__main__":
     cur.execute("""SELECT GROUP_CONCAT(cities.name SEPARATOR ', ')
                 FROM cities INNER JOIN states ON cities.state_id
                 = states.id WHERE states.name = %s""", (sys.argv[4],))
-    rows = cur.fetchall()
-    tmp = list(row[0] for row in rows)
-    print(*tmp, sep=", ")
+    row = cur.fetchone()
+    if row:
+        print(row[0])
     cur.close()
     db.close()
