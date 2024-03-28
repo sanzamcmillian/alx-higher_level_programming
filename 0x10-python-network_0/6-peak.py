@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Binary search to ffind peak in an unsorted list of integers. """
+""" Binary search to find peak in an unsorted list of integers. """
+
 
 def find_peak(list_of_integers):
     """
@@ -24,4 +25,3 @@ def find_peak(list_of_integers):
             right = mid
 
     return list_of_integers[left]
-
