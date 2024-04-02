@@ -12,4 +12,3 @@ if response.status_code == 200:
     print("\t- content:", body)
 else:
     print("Error:", response.status_code)
-
