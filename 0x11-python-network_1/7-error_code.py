@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Python script that takes in a URL, sends a request to the URL and displays the body of the response. """
+""" Python script that takes in a URL """
 import requests
 import sys
 
@@ -11,4 +11,3 @@ if response.status_code >= 400:
     print("Error code:", response.status_code)
 else:
     print(response.text)
-
