@@ -17,9 +17,7 @@ response = requests.get(url, auth=(username, password))
 if response.status_code == 200:
     # Parse response JSON
     user_data = response.json()
-    
     # Display user id
     print("Your GitHub user id:", user_data['id'])
 else:
     print("Error:", response.status_code)
-
