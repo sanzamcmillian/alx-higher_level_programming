@@ -19,8 +19,7 @@ response = requests.get(url, params=params)
 # Check if request was successful
 if response.status_code == 200:
     # Parse response JSON
-    commits = response.json()
-    
+    commits = response.json()   
     # Iterate through each commit and print its SHA and author name
     for commit in commits:
         sha = commit['sha']
@@ -28,4 +27,3 @@ if response.status_code == 200:
         print(f"{sha}: {author_name}")
 else:
     print("Error:", response.status_code)
-
