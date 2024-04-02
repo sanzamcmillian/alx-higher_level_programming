@@ -3,7 +3,7 @@
 import requests
 import sys
 
-# Get the letter from command line arguments or set to an empty string if no argument is given
+
 q = sys.argv[1] if len(sys.argv) > 1 else ""
 
 # URL for the POST request
@@ -27,4 +27,3 @@ if not data:
     print("No result")
 else:
     print("[{}] {}".format(data['id'], data['name']))
-
