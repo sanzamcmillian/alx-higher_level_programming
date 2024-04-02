@@ -12,4 +12,3 @@ if 'X-Request-Id' in response.headers:
     print("X-Request-Id:", x_request_id)
 else:
     print("X-Request-Id header not found in the response.")
-
