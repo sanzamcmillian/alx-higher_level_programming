@@ -12,7 +12,7 @@ class Square(Rectangle):
         y (int): The y-coordinate of the top-left corner of the square.
         id (int): The identifier of the square.
     """
-    def __init__(self, size, x = 0, y = 0, id = None):
+    def __init__(self, size, x=0, y=0, id=None):
         """
         Initializes a new Square instance.
 
@@ -46,13 +46,13 @@ class Square(Rectangle):
         self.height = value
 
     def __str__(self):
-         """
+        """
         Returns a string representation of the square.
 
         Returns:
             str: A string representation of the square.
         """
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size)
+        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size))
 
     def update(self, *args, **kwargs):
         """
