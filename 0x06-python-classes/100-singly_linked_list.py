@@ -60,7 +60,8 @@ class SinglyLinkedList:
     def __str__(self):
         """Print the singly linked list."""
         current = self.__head
-        while current:
-            print(current.data)
+        elem = []
+        while (current):
+            elem.append(str(current.data))
             current = current.next_node
-        return ""
+        return "\n".join(elem)
