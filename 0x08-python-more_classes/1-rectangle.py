@@ -12,7 +12,7 @@ class Rectangle():
         Constructor of the class Rectangle
           Args:
             - width (default = 0): int
-            - heigth (default = 0): int
+            - height (default = 0): int
         """
         self.height = height
         self.width = width

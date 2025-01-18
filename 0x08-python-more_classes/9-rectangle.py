@@ -59,14 +59,14 @@ class Rectangle:
         rectangle perimeter
         """
         if self.__width == 0 or self.__height == 0:
-            return (0)
+            return 0
         rectangle_params = ((2 * self.__height) + (2 * self.__width))
         return rectangle_params
 
     def __str__(self):
         """Returns the rectangle with the # character."""
         if self.__width == 0 or self.__height == 0:
-            return ("")
+            return ""
 
         rectangle = []
         for i in range(self.__height):
@@ -74,13 +74,13 @@ class Rectangle:
              for j in range(self.__width)]
             if i != self.__height - 1:
                 rectangle.append("\n")
-        return ("".join(rectangle))
+        return "".join(rectangle)
 
     def __repr__(self):
         """Returns the string representation of the Rectangle."""
         rectangle = "Rectangle(" + str(self.__width)
         rectangle += ", " + str(self.__height) + ")"
-        return (rectangle)
+        return rectangle
 
     def __del__(self):
         """Print a message for every deletion of
@@ -101,8 +101,8 @@ class Rectangle:
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
-            return (rect_1)
-        return (rect_2)
+            return rect_1
+        return rect_2
 
     @classmethod
     def square(cls, size=0):
@@ -111,4 +111,4 @@ class Rectangle:
         Args:
             size (int): The width and height of the new Rectangle.
         """
-        return (cls(size, size))
+        return cls(size, size)
